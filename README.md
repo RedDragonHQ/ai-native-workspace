@@ -6,7 +6,7 @@
 
 **🌏 Non-English readers**: Chinese versions of every document live in [`zh/`](zh/) — [`zh/README.md`](zh/README.md) · [`zh/ARCHITECTURE.md`](zh/ARCHITECTURE.md) · [`zh/BOOTSTRAP.md`](zh/BOOTSTRAP.md) · [`zh/examples/sample-workspace/`](zh/examples/sample-workspace/).
 
-**This is not another `.cursorrules` template.** It's an opinionated architecture for running a real research/engineering workspace where the AI agent is a first-class citizen — not a tool bolted onto a human workflow.
+**This is not another `.cursorrules` template.** It's an opinionated architecture for running a real research/engineering workspace where the AI agent is the primary operator — and humans are the fallback when agents aren't available.
 
 ---
 
@@ -36,16 +36,16 @@ This framework is built on a different premise:
 
 The framework is **protocol-based**, not **product-based**.
 
-### AI-first, not human-first
+### AI-first, human-readable
 
-The CLAUDE.md file is **the agent's runtime configuration** — not a README humans happen to share. Humans can read it, but the agent is the first-class citizen:
+CLAUDE.md is **optimized for agent consumption** — structured so an AI agent can load it and start working immediately. But it's not agent-exclusive: the same file is fully human-readable, and when agents aren't available, a human can step into the agent layer and operate the workspace using the same protocols.
 
-- Layered cognitive loading: global → workspace → project → persistent memory
+- Layered cognitive loading: global → workspace → project
 - Progressive context: read the index first, dive into details on demand
 - Structured continuity: cross-session state lives in CLAUDE.md and project docs, not in chat history
 - Workflow contracts: session-end protocols, recovery protocols, audit trails
 
-Humans get **side benefits**: consistent project structure, searchable inbox, versioned knowledge base.
+Humans don't just get side benefits — they're the **fallback operator**. When the agent layer fails (API down, model degraded, edge case the agent can't handle), the human reads the same CLAUDE.md and picks up where the agent left off.
 
 ---
 

@@ -62,7 +62,7 @@ The LLM reasoning capability behind the agent. **Key design: use a unified proto
 ```
 
 **Key principles**:
-- CLAUDE.md is **the agent's operating system config**. Humans can read it, but the agent is the first-class citizen.
+- CLAUDE.md is **the agent's operating system config**. Optimized for agent consumption, but fully human-readable — when agents aren't available, a human can step in and operate using the same protocols.
 - Each CLAUDE.md has a different job: root manages global cognition, subproject manages technical detail.
 - Cross-session facts (user preferences, decisions, lessons) go in CLAUDE.md or project docs — not work logs.
 
