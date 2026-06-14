@@ -121,7 +121,7 @@ workspace/
 **wiki/ is the advanced capability**:
 - Build it when inbox accumulates enough to need structure.
 - Core mechanism: **progressive loading**. `MANIFEST.md` is the index (one-line summary per entry). Agent reads index first, then dives into selected entries on demand.
-- Docs can carry maturity tiers (`raw` → `distilled` → `canonical`) and freshness tiers (`active` → `sleeping` → `deprecated`). These come from PKM practice — if you're interested in a deeper PKM system, this framework leaves room to grow into one.
+- Docs can carry maturity tiers (`raw` → `distilled` → `canonical`) and freshness tiers (`active` → `sleeping` → `deprecated`). These come from PKM practice — if there's enough interest, a deeper PKM guide will follow.
 
 ---
 

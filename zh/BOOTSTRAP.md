@@ -116,7 +116,7 @@ workspace/
 **wiki/ 是进阶能力**:
 - 当 inbox 积累到一定量,开始需要结构化知识时,再建 wiki
 - 核心机制是 **渐进式加载**:`MANIFEST.md` 是索引(每篇一行摘要),Agent 先看索引再按需 Read 详情
-- 文档可以带成熟度分级(`raw` → `distilled` → `canonical`)和时效分级(`active` → `sleeping` → `deprecated`)。这些来自 PKM 实践 —— 如果你后续想深入 PKM 体系,框架留了扩展空间。
+- 文档可以带成熟度分级(`raw` → `distilled` → `canonical`)和时效分级(`active` → `sleeping` → `deprecated`)。这些来自 PKM 实践 —— 如果感兴趣的人多,后面会专门展开讲 PKM 体系。
 
 ---
 
