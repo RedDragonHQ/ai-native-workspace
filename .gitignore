@@ -1,0 +1,29 @@
+# User-specific files
+.env
+.env.*
+*.key
+*.pem
+
+# Generated
+*.pyc
+__pycache__/
+node_modules/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Local dev state
+.claude/
+.cursor/
+
+# Ignore root CLAUDE.md when this repo is nested in a parent workspace
+# Keep CLAUDE.md files inside examples/ and zh/
+/CLAUDE.md
