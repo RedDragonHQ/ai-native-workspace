@@ -34,6 +34,20 @@
 
 **框架是协议级的,不是产品级的。**
 
+### 来自真实工作区,不是纸面设计
+
+AI-Native Workspace 不是从白板上画出来的模板,而是从一个真实运行的多项目 workspace 中提取出来的。完整生产版已经连续使用 6+ 个月,覆盖 ML 研究、多 agent 系统、基础设施、安全研究、内容站和 PKM。
+
+公开 repo 只保留可复用架构,但原始 workspace 每天都在压力测试这些核心设计:
+
+- 分层 `CLAUDE.md`:全局 → 工作区 → 项目级认知
+- `inbox/TODO.md`:跨会话工作记忆
+- `wiki/MANIFEST.md`:渐进式上下文加载,避免 context dump
+- 本地 CLI/MCP 服务作为协议扩展,而不是硬依赖
+- 模型/provider 可替换,不重写 application layer
+
+一句话: **即使 agent 消失,workspace 仍然能继续工作** —— 因为持久状态存在普通文件和显式约定里。
+
 ### AI-first,人类可读
 
 CLAUDE.md **优先为 agent 消费而优化** —— 结构化到 AI agent 加载后就能直接干活。但它不是 agent 独占的:同一份文件人类完全能读,当 agent 不可用时,人类可以进入 agent 层、用同样的协议操作 workspace。

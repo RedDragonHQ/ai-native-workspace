@@ -36,6 +36,20 @@ This framework is built on a different premise:
 
 The framework is **protocol-based**, not **product-based**.
 
+### Real-world proof, not theory
+
+AI-Native Workspace was extracted from a live multi-project workspace, not invented as a clean-room template. The production version has been used for 6+ months across ML research, multi-agent systems, infrastructure, security research, content sites, and PKM.
+
+The public repo keeps only the reusable architecture, but the original workspace stress-tested the core ideas daily:
+
+- layered `CLAUDE.md` files for global → workspace → project cognition
+- `inbox/TODO.md` as cross-session working memory
+- `wiki/MANIFEST.md` for progressive context loading instead of context dumps
+- local CLI/MCP services as protocol extensions, not hard dependencies
+- model/provider swaps without rewriting the application layer
+
+In short: **if the agent disappears, the workspace still works** — because the durable state lives in plain files and explicit conventions.
+
 ### AI-first, human-readable
 
 CLAUDE.md is **optimized for agent consumption** — structured so an AI agent can load it and start working immediately. But it's not agent-exclusive: the same file is fully human-readable, and when agents aren't available, a human can step into the agent layer and operate the workspace using the same protocols.
